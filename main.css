@@ -1,0 +1,14 @@
+body {
+  background-color: #b4b4b4;
+}
+
+h1 {
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  padding-top: 350px;
+}
