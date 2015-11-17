@@ -12,7 +12,7 @@ body {
 }
 
 .blurb,
-img {
+.photo {
   position: relative;
   -webkit-animation: slide .7s ease-out forwards;
   animation: slide .7s ease-out forwards;
@@ -21,9 +21,10 @@ img {
 
 .blurb {
   top: 60px;
+  width: 500px;
 }
 
-img {
+.photo {
   top: -60px;
 }
 
@@ -47,17 +48,21 @@ img {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  margin: 200px auto 0;
-  width: 640px;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  margin-top: 200px;
 }
 
-.container img {
+.container .photo {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  vertical-align: top;
   margin-right: 30px;
-  background-color: #eeeeee;
+  background-image: url(assets/photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .blurb .line {
@@ -123,14 +128,17 @@ img {
   .container {
     -webkit-flex-direction: column;
     flex-direction: column;
-    width: 100%;
-    padding: 60px;
+    padding: 80px;
     margin-top: 0;
   }
 
-  .container img {
+  .container .photo {
     width: 80px;
     height: 80px;
+  }
+
+  .container .blurb {
+    width: 100%;
   }
 
   .blurb h1 {
